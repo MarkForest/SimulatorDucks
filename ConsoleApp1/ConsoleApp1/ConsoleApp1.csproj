@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ducks\Duck.cs" />
+    <Compile Include="ducks\MallardDuck.cs" />
+    <Compile Include="ducks\RedHeadDuck.cs" />
+    <Compile Include="ducks\RubbenDuck.cs" />
+    <Compile Include="ducks\WoodenDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

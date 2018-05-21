@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApp1.ducks;
 
 namespace ConsoleApp1
 {
@@ -10,6 +11,33 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            MallardDuck mallardDuck = new MallardDuck();
+            RedHeadDuck redHeadDuck = new RedHeadDuck();
+            RubbenDuck rubbenDuck = new RubbenDuck();
+            WoodenDuck woodenDuck = new WoodenDuck();
+
+            mallardDuck.display();
+            mallardDuck.swim();
+            mallardDuck.quack();
+            mallardDuck.fly();
+            Console.WriteLine("==============");
+            redHeadDuck.display();
+            redHeadDuck.swim();
+            redHeadDuck.quack();
+            redHeadDuck.fly();
+            Console.WriteLine("==============");
+            rubbenDuck.display();
+            rubbenDuck.swim();
+            rubbenDuck.quack();
+            rubbenDuck.fly();
+            Console.WriteLine("==============");
+            woodenDuck.display();
+            woodenDuck.swim();
+            woodenDuck.quack();
+            woodenDuck.fly();
+
+            Console.ReadKey();
+
         }
     }
 }
