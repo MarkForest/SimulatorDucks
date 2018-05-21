@@ -29,13 +29,11 @@ namespace ConsoleApp1
             rubbenDuck.display();
             rubbenDuck.swim();
             rubbenDuck.quack();
-            rubbenDuck.fly();
+          
             Console.WriteLine("==============");
             woodenDuck.display();
             woodenDuck.swim();
-            woodenDuck.quack();
-            woodenDuck.fly();
-
+    
             Console.ReadKey();
 
         }

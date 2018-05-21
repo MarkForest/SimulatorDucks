@@ -13,16 +13,6 @@ namespace ConsoleApp1.ducks
             Console.WriteLine("I can swiming!");
         }
 
-        virtual public void quack()
-        {
-            Console.WriteLine("Quack Quack");
-        }
-
-        virtual public void fly()
-        {
-            Console.WriteLine("I can fly");
-        }
-
         public abstract void display();
     }
 }

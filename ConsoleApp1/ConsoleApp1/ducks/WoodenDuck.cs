@@ -12,8 +12,7 @@ namespace ConsoleApp1.ducks
         {
             Console.WriteLine("Hello i am Wooden Duck");
         }
-        public override void fly() { }
-        public override void quack() { }
+
         
     }
 }

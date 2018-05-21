@@ -47,6 +47,8 @@
     <Compile Include="ducks\RedHeadDuck.cs" />
     <Compile Include="ducks\RubbenDuck.cs" />
     <Compile Include="ducks\WoodenDuck.cs" />
+    <Compile Include="intarfaces\iFlyable.cs" />
+    <Compile Include="intarfaces\iQuackable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
