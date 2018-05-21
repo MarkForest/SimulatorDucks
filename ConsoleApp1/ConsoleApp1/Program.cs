@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleApp1.ducks;
+using ConsoleApp1.Behaviors;
 
 namespace ConsoleApp1
 {
@@ -11,29 +12,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            MallardDuck mallardDuck = new MallardDuck();
-            RedHeadDuck redHeadDuck = new RedHeadDuck();
-            RubbenDuck rubbenDuck = new RubbenDuck();
-            WoodenDuck woodenDuck = new WoodenDuck();
+            List<Duck> ducks = new List<Duck>();
+            ducks.AddRange(new Duck[] {
+                new MallardDuck(),
+                new RedHeadDuck(),
+                new RubbenDuck(),
+                new WoodenDuck()
+            });
+            
 
-            mallardDuck.display();
-            mallardDuck.swim();
-            mallardDuck.quack();
-            mallardDuck.fly();
-            Console.WriteLine("==============");
-            redHeadDuck.display();
-            redHeadDuck.swim();
-            redHeadDuck.quack();
-            redHeadDuck.fly();
-            Console.WriteLine("==============");
-            rubbenDuck.display();
-            rubbenDuck.swim();
-            rubbenDuck.quack();
-          
-            Console.WriteLine("==============");
-            woodenDuck.display();
-            woodenDuck.swim();
-    
+            foreach (var duck in ducks)
+            {
+                duck.display();
+                duck.swim();
+                duck.perfomeFly();
+                duck.perfomeQuack();
+                Console.WriteLine("===============");
+            }
+
+            ducks[3].setFlyBehavior(new RocketPowered());
+            Console.WriteLine();
+            foreach (var duck in ducks)
+            {
+                duck.display();
+                duck.swim();
+                duck.perfomeFly();
+                duck.perfomeQuack();
+                Console.WriteLine("===============");
+            }
             Console.ReadKey();
 
         }

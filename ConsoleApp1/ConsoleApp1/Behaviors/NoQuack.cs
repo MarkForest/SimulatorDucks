@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.intarfaces
+namespace ConsoleApp1.Behaviors
 {
-    public interface iFlyable
+    public class NoQuack : iQuackBehavior
     {
-        void fly();
+        public void quack() { }
     }
 }
